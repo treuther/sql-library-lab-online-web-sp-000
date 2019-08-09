@@ -22,3 +22,4 @@ CREATE TABLE books (
   series_id INTEGER
 );
 
+CREATE TABLE characters
