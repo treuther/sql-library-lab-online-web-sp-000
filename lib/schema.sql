@@ -1,4 +1,5 @@
 CREATE TABLE series (
   id INTEGER PRIMARY KEY,
-  S
+  title TEXT,
+  
 )
