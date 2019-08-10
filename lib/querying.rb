@@ -17,7 +17,7 @@ end
 
 def select_series_title_with_most_human_characters
   "SELECT title FROM (
-    Select series.title AS title, COUNT(characters.species) AS num_species FROM series JOIN characters ON series.id = characters.series_id WHERE characters.species = 'Human' GROUP BY series.title ORDER BY num_species DESC LIMIT 1;)"
+    Select series.title AS title, COUNT(characters.series_id) AS num_species FROM series JOIN characters ON series.id = characters.series_id WHERE characters.species = 'Human' GROUP BY series.title ORDER BY num_species DESC LIMIT 1;)"
 end
 
 def select_character_names_and_number_of_books_they_are_in
